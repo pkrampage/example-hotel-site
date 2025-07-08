@@ -1,10 +1,10 @@
 * {
     --white-text:#fff;
-
 }
 
 .hero{
     background-image: url(../assets/images/thailand\ beachside\ evening.jpg);
+    min-height: 60vh;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,8 @@
 }
 
 .container.px-4.py-5{
-    height:100vh;
+    min-height: 60vh;
+    height: auto;
 }
 
 .feature.col p{
@@ -22,25 +23,72 @@
 }
 
 .feature.col img{
-    height:300px;
+    height:220px;
+    width: 100%;
+    object-fit: cover;
     border-radius:20px;
 }
 
 .booking{
     background-image: url(../assets/images/thailand\ beachside\ 3ratio\ bluesky\ smallbar.jpg);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 60vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
 
 .box {
-    background-color: rgba(253, 248, 242, 0.8); 
+    background-color: rgba(253, 248, 242, 0.85); 
     max-width: 450px;
-    margin-top: 10px;
-    margin-left:40px;
+    margin: 32px 0 40px 40px;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 40vh;
+    height: auto;
+    padding: 40px 0 20px 0;
+  }
+  .container.px-4.py-5 {
+    min-height: 40vh;
+    padding: 20px 0 !important;
+  }
+  .feature.col img {
+    height: 140px;
+    border-radius: 12px;
+  }
+  .feature.col p {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  .box {
+    max-width: 92vw;
+    padding: 8px 1vw;
+    margin: 16px auto 16px auto;
+    font-size: 0.95rem;
+  }
+  .box h1, .box .fw-bold {
+    font-size: 1.4rem !important;
+  }
+  .box .btn {
+    font-size: 0.95rem !important;
+    padding: 8px 0 !important;
+  }
+  .booking {
+    min-height: 40vh;
+    padding: 20px 0 !important;
+  }
+  .btn {
+    font-size: 1rem !important;
+    padding: 10px 0 !important;
+  }
+  .social-links .fs-4 {
+    font-size: 1.3rem !important;
+  }
 }

@@ -64,8 +64,10 @@
     border-radius: 12px;
   }
   .feature.col p {
-    max-width: 100%;
+    max-width: 70vw;
     font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .box {
     max-width: 92vw;

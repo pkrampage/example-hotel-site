@@ -50,37 +50,45 @@
 }
 
 @media (max-width: 576px) {
+  .btn-warning.btn-lg.px-5.fw-bold.shadow {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    font-size: 1.15rem !important;
+  }
   .hero {
     min-height: 40vh;
     height: auto;
     padding: 40px 0 20px 0;
   }
-  .container.px-4.py-5 {
-    min-height: 40vh;
-    padding: 20px 0 !important;
-  }
   .feature.col img {
     height: 140px;
     border-radius: 12px;
   }
-  .feature.col p {
-    max-width: 70vw;
-    font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+  .booking{
+    align-items: center !important; 
   }
   .box {
-    max-width: 92vw;
-    padding: 8px 1vw;
-    margin: 16px auto 16px auto;
+    margin: 0;
+    padding: 16px;
     font-size: 0.95rem;
-  }
-  .box h1, .box .fw-bold {
-    font-size: 1.4rem !important;
+    max-width: 35vh;
   }
   .box .btn {
     font-size: 0.95rem !important;
     padding: 8px 0 !important;
+    margin-bottom: 10px;
+  }
+  .btn-success.btn-lg.px-4.gap-3 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    font-size: 1.1rem !important;
+  }
+  .box h1, .box .fw-bold {
+    font-size: 1.4rem !important;
   }
   .booking {
     min-height: 40vh;
@@ -93,4 +101,18 @@
   .social-links .fs-4 {
     font-size: 1.3rem !important;
   }
+}
+
+@media (max-width: 992px) {
+    .container.header {
+        display: none !important;
+    }
+    .booking {
+        align-items: center !important;
+        margin: 0 !important;
+        padding: 16px !important;
+    }
+    .box{
+        margin: 30px 0;
+    }
 }
